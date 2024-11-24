@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+      <h1>Jogo da Memória</h1>
+      <!-- Contador de tentativas -->
+      <p id="contador-tentativas-container">Tentativas: <span id="contador-tentativas">0</span></p>
+      <!-- Mensagem de vitória (inicialmente escondida) -->
+      <p id="mensagem-vitoria" style="display: none;">🎉 Parabéns! Você venceu! 🎉</p>
+      
+      <div class="grade-cartas" id="grade-cartas"></div>
+      <button id="botao-reiniciar">Reiniciar</button>
+      <h3>Histórico de Tentativas</h3>
+      <div id="historico-tentativas"></div>
+  <script src="script.js"></script>
+</main>
+</body>
+</html>

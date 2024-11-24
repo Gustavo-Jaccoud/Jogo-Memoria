@@ -1,0 +1,91 @@
+    @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+    body {
+      background: #FFAA00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: "Chewy";
+    }
+    main {
+      background: linear-gradient(rgba(119, 221, 119, 0.836), rgba(119, 221, 119, 0.936)), url("img/grid.png");
+      background-size: cover;
+      width: 100%;
+      height: 90%;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      color: #0c0c0c;
+    }
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 1.2rem;
+      color: #0c0c0c;
+    }
+    .grade-cartas {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 10px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+    .carta {
+      width: 100px;
+      height: 150px;
+      background: #ff6961;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.4s;
+    }
+    .carta:hover {
+      transform: scale(1.1);
+    }
+    .carta img {
+      display: none;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    .carta.virada img {
+      display: block;
+    }
+    .carta.virada {
+      background: none;
+    }
+    #mensagem-vitoria {
+      display: block;
+      color: green;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    #historico-tentativas {
+      height: 100px;
+      width: 20%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+      overflow-y: auto;
+    }
+    
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #45a049;
+      font-size: 25px;
+      color: #0c0c0c;
+      font-family: "Chewy";
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #4bc451;
+    }
